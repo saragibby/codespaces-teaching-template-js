@@ -90,11 +90,12 @@ To run what's in this repository, you need to first start a Codespaces instance.
 
     <img src="https://user-images.githubusercontent.com/82035/194710065-92f8c325-6f57-4c77-88d7-da8db3c235e9.png" alt="Codespace initializing" style="width: 600px;"/>
 
-1. When complete you will see your Codespace load with a terminal section at the bottom. Here you will see `npm install` executing. When complete you will return to the terminal prompt where you can run the web application by executing: `npm run start` 
+1. When complete you will see your Codespace load with a terminal section at the bottom. Here you will see `npm install` executing followed by `npm start` to launch the application.
 
-   When the web application is started you will see a prompt telling you it started successfully on port 1234, and you can open that site within your browser:
+   When your Codespaces is fully loaded and web application started, you will see `App.jsx` (the primary application source file) and a web browser tab opened to your web application running within our Codespace:
   
-   <img src="https://user-images.githubusercontent.com/82035/194709984-7e01f9db-df3e-41dc-bc1d-ce38b16b812d.png" alt="Web application started on port 1234" style="width: 340px;"/>
+   ![image](https://user-images.githubusercontent.com/82035/210632295-a744e81c-c703-4d75-a766-451f9ab3f69c.png)
+
 
 <br />
 
