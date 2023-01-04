@@ -1,7 +1,14 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/devcontainers/images/tree/main/src/javascript-node
 {
-  "name": "Node.js",
+  "name": "GitHub Education - Codespaces teaching template JS",
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "npm install",
+  "postCreateCommand": "",
+  "postAttachCommand": {
+    "server": "npm start"
+  },
+
   "build": {
     "dockerfile": "Dockerfile",
     // Update 'VARIANT' to pick a Node version: 18, 16, 14.
@@ -21,19 +28,26 @@
         "ms-vscode.azure-account",
         "ms-azuretools.vscode-azurestaticwebapps"
       ]
+    },
+    "codespaces": {
+      "openFiles": ["src/App.jsx"]
     }
   },
 
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
-
-  // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "npm install",
-
   // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "node",
+
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/azure-cli:1": {}
-  }
+  },
+
+  "portsAttributes": {
+    "1234": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
+  },
+
+  "forwardPorts": [1234]
 }
