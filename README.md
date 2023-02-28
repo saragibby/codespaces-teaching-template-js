@@ -51,7 +51,7 @@ This allows you to configure the exact Codespace environment needed for your les
 
 > 💡 Learn more here, [docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account)
 
-<br />
+
 
 ## 🗃️ Codespaces JavaScript template
 
